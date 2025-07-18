@@ -18,6 +18,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+      with:
+        persist-credentials: false
     - name: Build and Publish to Registry
       if: "!(startsWith(github.ref, 'refs/tags/'))"
       uses: docker/build-push-action@3e7a4f6646880c6f63758d73ac32392d323eaf8f # v1

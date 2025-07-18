@@ -9,6 +9,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+        with:
+          persist-credentials: false
       - name: Lint Dockerfile
         uses: brpaz/hadolint-action@eb9b96be611b84830aa1babacfb7070ecd2a8b1b # v1.1.0
         with:

@@ -16,7 +16,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build Docker image
-      uses: docker/build-push-action@v1
+      uses: docker/build-push-action@3e7a4f6646880c6f63758d73ac32392d323eaf8f # v1
       with:
         repository: matplotlib/mpl-docker
         dockerfile: Dockerfile
